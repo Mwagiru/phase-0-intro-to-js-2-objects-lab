@@ -18,18 +18,21 @@ function destructivelyUpdateEmployeeWithKeyAndValue(obj, key, value){
     return employee;
 }
 const lastEmployee = destructivelyUpdateEmployeeWithKeyAndValue(employee, "streetAddress","119 Jospeh Kang'ethe");
-console.log(employee.streetAddress)
+console.log(employee.streetAddress);
+//
 function deleteFromEmployeeByKey(obj, key){
-    const delEmployee = { ...obj };
+    const delEmployee = { ...employee };
     delEmployee[key];
     return delEmployee;
 }
-const delEmployee = deleteFromEmployeeByKey(delete employee.name);
-console.log(employee);
+let delEmployee = deleteFromEmployeeByKey(delete delEmployee.name);
+console.log(delEmployee);
 //
-function destructivelyDeleteFromEmployee(obj, key){
+function destructivelyDeleteFromEmployeeByKey(obj, key) {
     employee[key];
     return employee;
 }
-const starEmployee = destructivelyDeleteFromEmployee(delete employee.streetAddress);
+const starEmployee = destructivelyDeleteFromEmployeeByKey(delete employee.name);
 console.log(employee);
+
+
