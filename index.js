@@ -1,5 +1,5 @@
 // Write your solution in this file!
-const employee = {
+let employee = {
     name: "Tracy Mwagiru",
     streetAddress: "200 Kibera Station Road",
 };
@@ -22,14 +22,14 @@ console.log(employee.streetAddress);
 //
 function deleteFromEmployeeByKey(obj, key){
     const delEmployee = { ...employee };
-    delEmployee[key];
+    delete delEmployee[key];
     return delEmployee;
 }
 let delEmployee = deleteFromEmployeeByKey(delete delEmployee.name);
 console.log(delEmployee);
 //
 function destructivelyDeleteFromEmployeeByKey(obj, key) {
-    employee[key];
+   delete employee[key];
     return employee;
 }
 const starEmployee = destructivelyDeleteFromEmployeeByKey(delete employee.name);
